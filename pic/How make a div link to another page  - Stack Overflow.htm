@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/QAPage" idmmzcc-ext-docid="349544448"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>How make a div link to another page? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a%29">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Ask a Question">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="Q&amp;A for professional and enthusiast programmers">
+    <meta property="og:url" content="http://stackoverflow.com/questions/ask">
+
+    
+    
+    <script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/quant.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/beacon.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/analytics.js"></script><script src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/jquery.js"></script>
+    <script src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/all.css">
+
+    <script>
+        StackExchange.ready(
+            function () {
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 1, 'question');
+                });
+
+                var suggestionTarget = $("#question-suggestions");
+                StackExchange.question.initTitleSearch($('#title'), suggestionTarget, 'Stack Overflow', function ($links) {
+                    StackExchange.using('gps', function() {
+                        StackExchange.gps.track('question_ask.suggestions_show', { });
+                        $links.addClass('js-gps-track').data('gps-track', 'question_ask.suggestion_click');
+                        StackExchange.gps.bindTrackClicks(suggestionTarget);
+                    });
+                });
+
+            }
+        );
+    </script>
+
+        <script>
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("question_ask.visit", { 'inbox_subscription': 2 });
+                var pending = [];
+                var send = StackExchange.helpers.DelayedReaction(function () {
+                    StackExchange.gps.sendPending();
+                }, 3000);
+                var alreadySent = { "title_focus": 1 };
+                $("#title,#wmd-input,#tagnames").on("focus blur", function (evt) {
+                    var what = { title: "title", "wmd-input": "body", "tagnames": "tags" }[this.id] + "_" + evt.type;
+                    if (alreadySent[what])
+                        return;
+                    StackExchange.gps.track("question.action", { action_type: what }, true);
+                    alreadySent[what] = 1;
+                    send.trigger();
+                });
+            });
+        </script>
+
+            <script>
+                StackExchange.ready(function () {
+                    try {
+                        if (!document.createElementNS('http://www.w3.org/2000/svg', "svg").createSVGTransform)
+                            return;
+                    } catch (ex) {
+                        return;
+                    }
+                    var d = 100;
+                    $.ajax({url:"//cdn-prom.sstatic.net/WinterBash/js/qa-wb.js?v=9",cache:true,dataType:"script"}).done(function tryInit() {
+                        if (window.WinterBash) {
+                            WinterBash.core.init('winterbash2016.stackexchange.com', '//cdn-prom.sstatic.net/WinterBash/', '8');
+                        } else {
+                            if (d <= 800)
+                                setTimeout(tryInit, d);
+                            d *= 2;
+                        }
+                    });
+                });
+            </script>
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1483171463,"routeName":"Questions/Ask","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"a8d89bfb521475067ba7f29639c96f9d","rep":1,"isRegistered":true,"userType":3,"userId":6755692,"accountId":9073323,"gravatar":"<div class=\"gravatar-wrapper-32\"><img src=\"https://www.gravatar.com/avatar/0fb4397e37262668bf07fd2b228c1c5c?s=32&amp;d=identicon&amp;r=PG&amp;f=1\" alt=\"\" width=\"32\" height=\"32\"></div>","profileUrl":"http://stackoverflow.com/users/6755692/nayan","canSeeDeletedPosts":false,"ab":{"question_page_hero":{"v":"delay_hero_3","g":1},"devstory_onboarding_exp":{"v":"g","g":2},"mobile_signup_link":{"v":"simplified_signup_form:rdn","g":2}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableImgurHttps":true},"comments":{},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"7d387877fa1b","js/moderator.en.js":"21d0c366bf13","js/full-anon.en.js":"738136068ff5","js/full.en.js":"21cbf96acb16","js/wmd.en.js":"092bf0734dbc","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"371c80026b94","js/help.en.js":"af6d61ae5ea0","js/tageditor.en.js":"679047593031","js/tageditornew.en.js":"e6e2834b0b26","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"8f22ba768cac","js/review.en.js":"9acc5618f28b","js/tagsuggestions.en.js":"7dfec0d2a2d7","js/post-validation.en.js":"317470dd4fa5","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"20b57f73778f","js/keyboard-shortcuts.en.js":"ccba6e41e043","js/external-editor.en.js":"235e80f649d7","js/external-editor.en.js":"235e80f649d7","js/snippet-javascript.en.js":"a03d5a1bd85d","js/snippet-javascript-codemirror.en.js":"6b44be594cc1"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+<script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/full.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/tageditornew.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/tagsuggestions.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/wmd.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/external-editor.js"></script><script async="" src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/snippet-javascript.js"></script><link rel="stylesheet" type="text/css" href="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/wb-include.css"><style type="text/css"> .wmd-snippet-button span { background-position: 0 0; } .wmd-snippet-button:hover span { background-position: 0 -40px; }</style></head>
+<body class="ask-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+                    <a href="http://stackoverflow.com/users/logout" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:8 })">log out</a>
+    </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+                    <a href="http://stackexchange.com/users/9073323/?tab=accounts">your communities</a>
+            </h3>
+
+                <a href="#" id="edit-pinned-sites">edit</a>
+                <a href="#" id="cancel-pinned-sites" style="display: none;">cancel</a>
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <ul class="my-sites">
+                        <li>
+                            
+
+
+
+    <a href="http://stackoverflow.com/" class="site-link js-gps-track" data-id="1" data-gps-track="
+            site.switch({ target_site:1, item_type:3 }),
+        site_switcher.click({ item_type:1 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+            <span class="rep-score">1</span>
+    </a>
+
+                        </li>
+                </ul>
+                    <div class="pinned-site-editor-container" style="display: none;">
+                        <input id="js-site-search-txt" class="site-filter-input" placeholder="Add a Stack Exchange community" type="text">
+                        <input id="pin-site-btn" value="Add" disabled="disabled" type="submit">
+                        <ul class="js-found-sites found-sites"></ul>
+                        <ul class="pinned-site-list sortable" data-custom-list="False">
+                        </ul>
+                        <input value="Save" id="save-pinned-sites-btn" disabled="disabled" type="submit">
+                        <a href="#" id="reset-pinned-sites">reset to default list</a>
+                    </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 162 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#" class="topbar-icon icon-achievements yes-hover js-achievements-button icon-achievements-unread" data-unread-class="icon-achievements-unread" title="You have new achievements">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        <a href="#" class="topbar-icon yes-hover icon-winterbash"><span class="wb-unread-count" style="display: none;"></span></a></div>
+
+        <div class="topbar-links">
+
+                <a href="http://stackoverflow.com/users/6755692/nayan" class="profile-me js-gps-track wb-hat-checked" data-gps-track="profile_summary.click()">
+                    
+                    <div class="gravatar-wrapper-24" title="nayan"><img src="How%20make%20a%20div%20link%20to%20another%20page%20%20-%20Stack%20Overflow_files/0fb4397e37262668bf07fd2b228c1c5c.png" alt="" class="avatar-me js-avatar-me" width="24" height="24"></div>
+
+                    <div class="links-container topbar-flair">
+
+                        <span class="reputation" title="your reputation: 1">
+                            1
+                        </span>
+<span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>                    </div>
+                </a>
+                <div class="links-container">
+                    <span class="topbar-menu-links">
+
+
+
+
+        <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                        <input name="q" placeholder="Search Q&amp;A" tabindex="1" autocomplete="off" maxlength="240" type="text">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li>
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://stackoverflow.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://stackoverflow.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li class="youarehere">
+                            <a id="nav-askquestion" style="cursor:default">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+
+
+<div id="mainbar" class="ask-mainbar">
+    
+    <form id="post-form" class="post-form" action="/questions/ask/submit" method="post">
+        <input name="qualityBanWarningShown" value="False" type="hidden">
+        <input name="priorAttemptCount" value="0" type="hidden"> 
+        <input name="warntags" type="hidden">
+        <div id="question-form">
+            <div style="position: relative;"> 
+                <div class="form-item ask-title">
+                    <table class="ask-title-table">
+                        <tbody><tr>
+                            <td class="ask-title-cell-key">
+                                <label for="title">Title</label>
+                            </td>
+                            <td class="ask-title-cell-value">
+                                <input id="title" name="title" maxlength="300" tabindex="100" placeholder="What's your programming question? Be specific." class="ask-title-field" data-min-length="15" data-max-length="150" autocomplete="off" value="How make a div link to another page?" type="text">                        
+                            </td>
+                        </tr>
+                    </tbody></table>
+                    <div id="question-suggestions"><label>Questions that may already have your answer</label>
+        <div class="title-search-container">
+<div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/25842992/6755692" title="-4 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">-4</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/25842992/how-make-a-div-link-to-another-page" class="question-hyperlink js-gps-track" title="Something isn't right! I am trying to link this div to another page but it keeps giving me 404 error when I click it. I tried replacing the page with google.com and it worked fine! I know this page ..." dir="ltr" target="_blank">How make a div link to another page?</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/3207918/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/3207918/how-to-make-a-button-link-to-another-html-page" class="question-hyperlink js-gps-track" title="How to make a button link to another html page?
+
+button.addClickHandler(new ClickHandler() {
+
+public void onClick(ClickEvent event) {
+  //this code has to redirect to another page within the project
+}" dir="ltr" target="_blank">How to make a button link to another html page?</a>
+            <span title="3 answers">3</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/40208996/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/40208996/link-to-another-page-scrolled-to-a-div-anchor" class="question-hyperlink js-gps-track" title="Is it possible to have a link to another page on your site, but have the browser scrolled to an anchor div? For example most of my site's content is on the homepage, divided in sections such as about, ..." dir="ltr" target="_blank">Link to another page, scrolled to a div anchor</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/17712716/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/17712716/how-can-i-make-a-tooltip-link-to-another-page" class="question-hyperlink js-gps-track" title="In the data gridview, I am able to put tooltip (http://yiibooster.clevertech.biz/javascript.html#tooltips) by using headerHtmlOptions and get the data from the database. 
+
+My problem is that I can't ..." dir="ltr" target="_blank">How can I make a tooltip link to another page?</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/33469355/6755692" title="1 vote, with an accepted answer">
+        <div class="answer-votes answered-accepted default">1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/33469355/make-a-submit-button-link-to-another-page" class="question-hyperlink js-gps-track" title="I am using embedded ruby.
+So I have the code:
+
+&lt;%= f.submit &quot;Log in&quot;, class: &quot;btn btn-primary&quot; %&gt;
+I want to make this button link to another page while submitting the information that was ..." dir="ltr" target="_blank">Make a submit button link to another page</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/20565644/6755692" title="7 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">7</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/20565644/how-to-link-to-a-div-on-another-page" class="question-hyperlink js-gps-track" title="I'd like that a specific link goes to a certain header on another page. I know how to do it on the current page." dir="ltr" target="_blank">How to link to a &lt;div&gt; on another page?</a>
+            <span title="4 answers">4</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/22661152/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/22661152/link-to-a-div-on-another-page" class="question-hyperlink js-gps-track" title="I have this code:
+
+&lt;div id=&quot;text&quot;&gt;&lt;p&gt;Intertráfego is available to be reached at any time. Know
+&lt;a href=&quot;order_quotation.html#map&quot;&gt;where we are&lt;/a&gt; and &lt;a
+href=&quot;..." dir="ltr" target="_blank">Link to a div on another page</a>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/38427943/6755692" title="-1 votes">
+        <div class="answer-votes default">-1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/38427943/how-do-i-make-a-submit-button-link-to-another-page" class="question-hyperlink js-gps-track" title="I need help on my site guys. I had the site all ready now but I can't make a submit button save and redirect to the submitted registration page, this is my whole code:
+
+
+
+&lt;h1&gt; Welcome to the ..." dir="ltr" target="_blank">how do i make a submit button link to another page</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/31460904/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/31460904/how-to-make-javascript-link-to-another-page" class="question-hyperlink js-gps-track" title="I would like to know how to make a JavaScript function link to another site.
+
+Here is my code so far.
+
+var user = &quot;iamauser1&quot;
+var pass = &quot;iamauser2&quot;
+var userfield = document.getElementByName(&quot;..." dir="ltr" target="_blank">How to make JavaScript link to another page</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/34821728/6755692" title="-1 votes">
+        <div class="answer-votes default">-1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/34821728/how-can-i-make-a-button-link-to-another-page" class="question-hyperlink js-gps-track" title="This is my HTML so far
+
+
+
+&lt;button type=&quot;button&quot; formaction=&quot;contact.html&quot;&gt;Get In Touch!&lt;/button&gt;
+
+
+
+For some reason when I click on the button in a browser it doesn't take me to the ..." dir="ltr" target="_blank">How can I make a button link to another page?</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/27044631/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/27044631/how-do-i-make-a-div-visible-on-another-page" class="question-hyperlink js-gps-track" title="Right now, I have 2 separate pages and I want to be able to click something on one page that makes an image in a div tag visible on the other page.
+This is how i made my div tag invisible.
+On the ..." dir="ltr" target="_blank">How do I make a div visible on another page?</a>
+            <span title="3 answers">3</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/5333787/6755692" title="1 vote">
+        <div class="answer-votes default">1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/5333787/how-to-make-a-link-link-to-a-div" class="question-hyperlink js-gps-track" title="I have a carousel for a Tumblr blog and there are separate DIVs for each blog post, but there is also a DIV for info like name/description etc.. How would I make a button that slid to that DIV when ..." dir="ltr" target="_blank">How to make a link - link to a DIV?</a>
+            <span title="3 answers">3</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/3193252/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/3193252/linking-to-another-page" class="question-hyperlink js-gps-track" title="Using HTML
+
+I want to use 2 checkbox, when i click the check box 1 then it will redirect to another page, when i click the check box 2 then it will redirect to another page.
+
+How to make a code in ..." dir="ltr" target="_blank">Linking to another page</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/14335836/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/14335836/can-i-make-a-facebook-app-simply-link-to-another-page" class="question-hyperlink js-gps-track" title="I want to try and add a app to my book's page to either link directly to, say, the book's page on Amazon, or (2nd best option) to link to the book's &quot;where to buy this book&quot; facebook page.
+
+Can I do ..." dir="ltr" target="_blank">Can I make a Facebook app simply link to another page?</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/20991817/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/20991817/how-to-redirect-a-link-to-another-page-on-wordpress" class="question-hyperlink js-gps-track" title="i would like to know where do i change a link to direct to another page, if you look into my website http://www.ker-downeyafrica.com/southern-africa/ there's a green small block which says &quot;enquire ..." dir="ltr" target="_blank">How to redirect a link to another page on wordpress?</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/26730645/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/26730645/cant-link-to-another-page-with-user" class="question-hyperlink js-gps-track" title="I want link to another page with my user, but i have an error:
+
+RuntimeError in WelcomeController#edit
+Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use ..." dir="ltr" target="_blank">Can't link to another page with user</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/27748021/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/27748021/make-a-polygon-link-to-another-page-using-google-maps-api-and-fusion-tables" class="question-hyperlink js-gps-track" title="I'm trying to figure out how to make a Google Maps polygon (the entire polygon) that is created by Google Fusion tables to be a clickable link to a different page. I had originally thought to add an ..." dir="ltr" target="_blank">Make a polygon link to another page using Google Maps API and Fusion Tables</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/29418663/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/29418663/on-one-page-click-link-to-another-page-show-div-and-expand-div" class="question-hyperlink js-gps-track" title="On one page I have this:
+(1) mini navigation
+(2) each link in mini nav (1) shows or hides a div (think tabs) below it
+(3) within each hidden div (2) is another show/hide div effect (think accordion)
+
+..." dir="ltr" target="_blank">On one page click link to another page show div and expand div</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/35234188/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/35234188/how-to-make-a-div-linkable" class="question-hyperlink js-gps-track" title="I have a block on my Shopify theme's home page that is basically an image box with text over it and when the text is clicked, it links to a url.
+
+I want the box itself to be linkable in case I don't ..." dir="ltr" target="_blank">How to make a div linkable?</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/39360949/6755692" title="0 votes">
+        <div class="answer-votes default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/39360949/open-link-to-another-div-in-the-same-page-php" class="question-hyperlink js-gps-track" title="I want to ask about open link to another div in the same page (php).
+
+The situation is like this:
+
+I divide a page into 2 section top and button 
+
+&lt;div id=&quot;top&quot;&gt;
+&lt;/div&gt;
+&lt;div id=&quot;buttom&quot;&amp;..." dir="ltr" target="_blank">open link to another div in the same page (php)</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/16307014/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/16307014/create-a-link-to-another-page-in-hot-towel" class="question-hyperlink js-gps-track" title="How to create a link to another page in hot towel ?
+
+I know that to add a link to the menu, I have to add it here : 
+
+function boot() {
+    router.mapNav('home');
+    router.mapNav('details');
+    ..." dir="ltr" target="_blank">Create a link to another page in hot towel</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/27812968/6755692" title="1 vote">
+        <div class="answer-votes default">1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/27812968/how-do-i-make-a-div-link-in-laravel" class="question-hyperlink js-gps-track" title="How do I make an entire div as a link in Laravel?
+
+(using {{ link_to() }} does not work for me because I want an entire div to be clickable)
+
+In traditional HTML I would link a div like the following
+
+..." dir="ltr" target="_blank">How do I make a &lt;div&gt; link in laravel?</a>
+            <span title="2 answers">2</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/22871821/6755692" title="1 vote, with an accepted answer">
+        <div class="answer-votes answered-accepted default">1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/22871821/how-to-link-to-another-liferay-page" class="question-hyperlink js-gps-track" title="I'm trying to figure out how to link to another page within the same liferay site. 
+
+Obviously I could hardcode the url in my portlet's view but I'm worried about having to update all of my portlets ..." dir="ltr" target="_blank">How to link to another liferay page</a>
+            <span title="1 answer">1</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/34396819/6755692" title="1 vote, with an accepted answer">
+        <div class="answer-votes answered-accepted default">1</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/34396819/make-image-overlay-clickable-to-link-to-another-page" class="question-hyperlink js-gps-track" title="jsfiddle: https://jsfiddle.net/e0u4sow1/
+
+I want to use the following code for an image to link to another page. Right now if I make it a link it doesn't work. I read somewhere I need to add 
+
+pointer-..." dir="ltr" target="_blank">Make Image overlay clickable to link to another page</a>
+            <span title="4 answers">4</span>
+    </div>
+</div><div class="answer-summary">
+
+
+    <a href="http://stackoverflow.com/q/18615360/6755692" title="0 votes, with an accepted answer">
+        <div class="answer-votes answered-accepted default">0</div>
+    </a>
+    <div class="answer-link " style="width:90%">
+        <a href="http://stackoverflow.com/questions/18615360/yii-cdetailview-link-to-another-page" class="question-hyperlink js-gps-track" title="In CDetailView, how do I link a give value to another page? Say I have a book that is member of a book category, e.g. Science Fiction. The book details page displays the following data:
+
+Book title: ..." dir="ltr" target="_blank">YII - CDetailView: link to another page</a>
+            <span title="2 answers">2</span>
+    </div>
+</div>        </div></div>
+                </div>
+            </div>
+
+
+
+
+
+            
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        StackExchange.using("tagEditor", function () { StackExchange.tagEditor.ready.done(initFadingHelpText); });
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'ask',
+                convertImagesToLinks: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: false,
+                    discardSelector: ".discard-question"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li class="wmd-button" style="left: 0px;" id="wmd-bold-button" title="Strong &lt;strong&gt; Ctrl+B"><span style="background-position: 0px 0px;"></span></li><li class="wmd-button" style="left: 25px;" id="wmd-italic-button" title="Emphasis &lt;em&gt; Ctrl+I"><span style="background-position: -20px 0px;"></span></li><li class="wmd-spacer wmd-spacer1" id="wmd-spacer1"></li><li class="wmd-button" style="left: 75px;" id="wmd-link-button" title="Hyperlink &lt;a&gt; Ctrl+L"><span style="background-position: -40px 0px;"></span></li><li class="wmd-button" style="left: 100px;" id="wmd-quote-button" title="Blockquote &lt;blockquote&gt; Ctrl+Q"><span style="background-position: -60px 0px;"></span></li><li class="wmd-button" style="left: 125px;" id="wmd-code-button" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl+K"><span style="background-position: -80px 0px;"></span></li><li class="wmd-button" style="left: 150px;" id="wmd-image-button" title="Image &lt;img&gt; Ctrl+G"><span style="background-position: -100px 0px;"></span></li><li class="wmd-button wmd-snippet-button" style="left:175px" id="wmd-snippet-button" title="JavaScript/HTML/CSS snippet Ctrl-M"><span style="background-image: url(&quot;/content/Shared/balsamiq/wmd-mockup-button.png&quot;);"></span></li><li class="wmd-spacer wmd-spacer2" id="wmd-spacer2" style="left: 220px;"></li><li class="wmd-button" style="left: 225px;" id="wmd-olist-button" title="Numbered List &lt;ol&gt; Ctrl+O"><span style="background-position: -120px 0px;"></span></li><li class="wmd-button" style="left: 250px;" id="wmd-ulist-button" title="Bulleted List &lt;ul&gt; Ctrl+U"><span style="background-position: -140px 0px;"></span></li><li class="wmd-button" style="left: 275px;" id="wmd-heading-button" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl+H"><span style="background-position: -160px 0px;"></span></li><li class="wmd-button" style="left: 300px;" id="wmd-hr-button" title="Horizontal Rule &lt;hr&gt; Ctrl+R"><span style="background-position: -180px 0px;"></span></li><li class="wmd-spacer wmd-spacer3" id="wmd-spacer3" style="left: 346px;"></li><li class="wmd-button" style="left: 350px;" id="wmd-undo-button" title="Undo - Ctrl+Z"><span style="background-position: -200px 0px;"></span></li><li class="wmd-button" style="left: 375px;" id="wmd-redo-button" title="Redo - Ctrl+Y"><span style="background-position: -220px -20px;"></span></li><li class="wmd-button wmd-help-button active-help" id="wmd-help-button" style="right: 0px;" title="Markdown Editing Help"><span style="background-position: -240px 0px;"></span></li><div id="mdhelp" class="mdhelp" style="right: -13px; width: 660px; top: 41px;">
+    <ul id="mdhelp-tabs" class="mdhelp-tabs">
+        <li data-tab="mdhelp-links" data-buttons="link">Links</li>
+        <li data-tab="mdhelp-images" data-buttons="image">Images</li>
+        <li data-tab="mdhelp-styles" data-buttons="bold,italic,heading">Styling/Headers</li>
+        <li data-tab="mdhelp-lists" data-buttons="olist,ulist">Lists</li>
+        <li data-tab="mdhelp-blockquotes" data-buttons="quote">Blockquotes</li>
+        <li data-tab="mdhelp-code" data-buttons="code">Code</li>
+        <li data-tab="mdhelp-html"> HTML </li>
+        <li style="float:right"><a href="http://stackoverflow.com/editing-help" target="_blank">advanced help »</a></li>
+    </ul>
+    
+    <div class="mdhelp-tab" id="mdhelp-links">
+            <p>
+                In most cases, a plain URL will be recognized as such and automatically linked:
+            </p>
+            <pre>Visit http://area51.stackexchange.com/ regularly!
+Use angle brackets to force linking: Have you seen &lt;http://superuser.com&gt;?
+</pre>
+            <p>
+                To create fancier links, use Markdown:
+            </p>
+                <pre>Here's [a link](http://www.example.com/)! And a reference-style link to [a panda][1].
+References don't have to be [numbers][question].
+
+ [1]: http://notfound.stackexchange.com/
+ [question]: http://english.stackexchange.com/questions/11481
+</pre>
+                <p>You can add tooltips to links:</p>
+<pre>Click [here](http://diy.stackexchange.com<span class="spaces">&nbsp;</span>"this text appears when you mouse over")!
+This works with [reference links][blog] as well.
+
+ [blog]: http://blog.stackoverflow.com/<span class="spaces">&nbsp;</span>"click here for updates"
+</pre>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-images">
+        <p>Images are exactly like links, but they have an exclamation point in front of them:</p>
+        <pre>![a busy cat](https://cdn.sstatic.net/Sites/stackoverflow/img/error-lolcat-problemz.jpg)
+![two muppets][1]
+
+ [1]: http://i.imgur.com/I5DFV.jpg "tooltip"
+</pre>
+        <p>
+            The word in square brackets is the alt text, which gets displayed if the browser
+ can't show the image. Be sure to include meaningful alt text for screen-reading
+ software.
+        </p>
+   
+    </div>
+    <div class="mdhelp-tab" id="mdhelp-styles">
+        <div class="col1">
+            <p>Be sure to use text styling sparingly; only where it helps readability.</p>
+                <pre>*This is italicized*, and so
+is _this_.
+
+**This is bold**, just like __this__.
+
+You can ***combine*** them
+if you ___really have to___.
+</pre>
+        
+        </div>
+        <div class="col2">
+            <p>
+                To break your text into sections, you can use headers:
+            </p>
+                <pre>A Large Header
+==============
+
+Smaller Subheader
+-----------------
+</pre>
+            <p>
+                Use hash marks if you need several levels of headers:</p>
+    <pre># Header 1 #
+## Header 2 ##
+### Header 3 ###
+</pre>
+
+            
+        </div>
+
+    </div>
+    <div class="mdhelp-tab" id="mdhelp-lists">
+        <p>Both bulleted and numbered lists are possible:</p>
+        <div class="col1">
+<pre>-<span class="spaces">&nbsp;</span>Use a minus sign for a bullet
++<span class="spaces">&nbsp;</span>Or plus sign
+*<span class="spaces">&nbsp;</span>Or an asterisk
+
+1.<span class="spaces">&nbsp;</span>Numbered lists are easy
+2.<span class="spaces">&nbsp;</span>Markdown keeps track of
+ the numbers for you
+7.<span class="spaces">&nbsp;</span>So this will be item 3.
+</pre>
+        </div>
+        <div class="col2">
+<pre>1.<span class="spaces">&nbsp;</span>Lists in a list item:
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>-<span class="spaces">&nbsp;</span>Indented four spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>*<span class="spaces">&nbsp;</span>indented eight spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>-<span class="spaces">&nbsp;</span>Four spaces again.
+2.<span class="spaces">&nbsp;&nbsp;</span>You can have multiple
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>paragraphs in a list items.
+<span class="spaces">&nbsp;</span>
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>Just be sure to indent.
+</pre>        
+        </div>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-blockquotes">
+        <div class="col1">
+            <pre>&gt; Create a blockquote by
+&gt; prepending “&gt;” to each line.
+&gt;
+&gt; Other formatting also works here, e.g.
+&gt;
+&gt; 1. Lists or
+&gt; 2. Headings:
+&gt;
+&gt; ## Quoted Heading ##
+</pre>
+        </div>
+        <div class="col2">
+                <p>
+                    You can even put blockquotes in blockquotes:
+                </p>
+                <pre>&gt; A standard blockquote is indented
+&gt; &gt; A nested blockquote is indented more
+&gt; &gt; &gt; &gt; You can nest to any depth.
+</pre>
+        </div>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-code">
+        <p>
+            To create code blocks or other preformatted text, indent by four spaces:
+        </p>
+        <pre><span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>This will be displayed in a monospaced font. The first four spaces
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>will be stripped off, but all other whitespace will be preserved.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>Markdown and HTML are turned off in code blocks:
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;i&gt;This is not italic&lt;/i&gt;, and [this is not a link](http://example.com)
+</pre>
+        <p>
+            To create not a block, but an inline code span, use backticks:
+        </p>
+        <pre>The `$` character is just a shortcut for `window.jQuery`.
+</pre>
+        <p>
+            If you want to have a preformatted block within a list, indent by eight spaces:
+        </p>
+        <pre>1. This is normal text.
+2. So is this, but now follows a code block:
+<span class="spaces">&nbsp;</span>
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Skip a line and indent eight spaces.
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>That's four spaces for the list
+<span class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>and four to trigger the code block.
+</pre>
+    </div>
+
+    <div class="mdhelp-tab" id="mdhelp-html">
+        <p>
+            If you need to do something that Markdown can't handle, use HTML. Note that <a href="http://meta.stackexchange.com/questions/1777/what-html-tags-are-allowed" target="_blank">we only support a very strict subset of HTML!</a>
+        </p>
+        <pre>Strikethrough humor is &lt;strike&gt;funny&lt;/strike&gt;.
+</pre>
+        <p>
+            Markdown is smart enough not to mangle your span-level HTML:
+        </p>
+        <pre>&lt;b&gt;Markdown works *fine* in here.&lt;/b&gt;
+</pre>
+        <p>
+            Block-level HTML elements have a few restrictions:
+        </p>
+        <ol>
+            <li>They must be separated from surrounding text by blank lines.</li>
+            <li>The begin and end tags of the outermost block element must not be indented.</li>
+            <li>Markdown can't be used within HTML blocks.</li>
+        </ol>
+        <br>
+        <pre>&lt;pre&gt;
+ You can &lt;em&gt;not&lt;/em&gt; use Markdown in here.
+&lt;/pre&gt;
+</pre>
+    </div>
+
+    <div class="cbt"></div>
+</div></ul></div>
+            <div style="clear: both; height: 28px;"></div><textarea id="wmd-input" class="wmd-input processed" name="post-text" cols="92" rows="15" tabindex="101" data-min-length="">i
+ am trying to call a page div from another php page.i call it using 
+(found on net) admin.php#changepass
+
+like----my html code
+
+    &lt;div id="changepass" class="w3-container city" 
+style="display:none"&gt;
+      &lt;form name="changespass" class="w3-container" method="post" 
+action="changepass.php"&gt;
+       &lt;h2 class="w3-text-blue"&gt;Change password&lt;/h2&gt;
+       &lt;p&gt;      
+       &lt;label class="w3-text-blue"&gt;&lt;b&gt;Current 
+Password&lt;/b&gt;&lt;/label&gt;
+       &lt;input required autocomplete="off" name="currpass" 
+class="w3-input w3-border w3-animate-input" type="password" 
+style="width:30%"&gt;
+        &lt;p&gt;      
+       &lt;label class="w3-text-blue"&gt;&lt;b&gt;New 
+Password&lt;/b&gt;&lt;/label&gt;
+       &lt;input required autocomplete="off" name="npass" 
+class="w3-input w3-border w3-animate-input" type="password" 
+style="width:30%"&gt;
+        &lt;p&gt;    
+        &lt;p&gt;      
+       &lt;label class="w3-text-blue"&gt;&lt;b&gt;Confirm 
+Password&lt;/b&gt;&lt;/label&gt;
+       &lt;input required  autocomplete="off" name="cpass" 
+class="w3-input w3-border w3-animate-input" type="password" 
+style="width:30%"&gt;
+       &lt;p&gt;
+       &lt;button name="submitx" onclick="checkx()" class="w3-btn 
+w3-cyan w3-border w3-border-red 
+w3-round-xlarge"&gt;Submit&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+
+and my php code from where i call it</textarea>
+        <div class="grippie" style="margin-right: 0px;"></div></div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height: 24px; display: block;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"><p>i am trying to call a page div from another php page.i call it using (found on net) admin.php#changepass</p>
+
+<p>like----my html code</p>
+
+<pre><code>&lt;div id="changepass" class="w3-container city" style="display:none"&gt;
+  &lt;form name="changespass" class="w3-container" method="post" action="changepass.php"&gt;
+   &lt;h2 class="w3-text-blue"&gt;Change password&lt;/h2&gt;
+   &lt;p&gt;      
+   &lt;label class="w3-text-blue"&gt;&lt;b&gt;Current Password&lt;/b&gt;&lt;/label&gt;
+   &lt;input required autocomplete="off" name="currpass" class="w3-input w3-border w3-animate-input" type="password" style="width:30%"&gt;
+    &lt;p&gt;      
+   &lt;label class="w3-text-blue"&gt;&lt;b&gt;New Password&lt;/b&gt;&lt;/label&gt;
+   &lt;input required autocomplete="off" name="npass" class="w3-input w3-border w3-animate-input" type="password" style="width:30%"&gt;
+    &lt;p&gt;    
+    &lt;p&gt;      
+   &lt;label class="w3-text-blue"&gt;&lt;b&gt;Confirm Password&lt;/b&gt;&lt;/label&gt;
+   &lt;input required  autocomplete="off" name="cpass" class="w3-input w3-border w3-animate-input" type="password" style="width:30%"&gt;
+   &lt;p&gt;
+   &lt;button name="submitx" onclick="checkx()" class="w3-btn w3-cyan w3-border w3-border-red w3-round-xlarge"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p></p>
+
+<p>and my php code from where i call it</p></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" value="a8d89bfb521475067ba7f29639c96f9d" type="hidden">
+        <input id="author" name="author" type="text">
+    <input name="i1l" value="PpTlvMaanCkz0YXofRLhZeFY02XtBhl0rJFN6I8x5Ac=" type="hidden"></div>
+
+
+
+</div>
+        
+            <div style="position: relative;"> 
+
+                <script>
+    StackExchange.using("tagEditor", function () {
+        initTagRenderer("".split(" "), "".split(" "));
+        StackExchange.tagEditor($("#tagnames"))
+        StackExchange.tagEditor.ready.then(function () {
+            StackExchange.using("beginEditEvent", function () {
+                StackExchange.beginEditEvent.init();
+            });
+        });
+    });
+</script>	
+
+<div style="position: relative;"> 
+<div class="form-item">
+    <label>Tags</label>
+
+    <input id="tagnames" name="tagnames" size="60" tabindex="103" placeholder="at least one tag such as (windows ruby-on-rails c), max 5 tags" style="display: none;" type="text"><div class="tag-editor" style="width: 658px; height: 35px;"><span></span><input tabindex="103" placeholder="at least one tag such as (windows ruby-on-rails c), max 5 tags" style="width: 650px;" type="text"><span></span></div>
+</div>
+</div>
+
+                    <div id="tag-suggestions"><span>suggested tags:</span><a class="post-tag" rel="tag" href="http://stackoverflow.com/questions/tagged/jquery" title="show questions tagged 'jquery'">jquery</a><a class="post-tag" rel="tag" href="http://stackoverflow.com/questions/tagged/css" title="show questions tagged 'css'">css</a><a class="post-tag" rel="tag" href="http://stackoverflow.com/questions/tagged/html" title="show questions tagged 'html'">html</a><a class="post-tag" rel="tag" href="http://stackoverflow.com/questions/tagged/php" title="show questions tagged 'php'">php</a><a class="post-tag" rel="tag" href="http://stackoverflow.com/questions/tagged/javascript" title="show questions tagged 'javascript'">javascript</a></div>
+                    <script>
+                        StackExchange.using("tagSuggestions", function () {
+                            StackExchange.tagSuggestions.init();
+                        });
+                    </script>
+
+                
+
+            </div>
+        
+            <div id="question-only-section">
+
+                <div class="form-submit cbt">
+                    <input id="submit-button" value="Post Your Question" tabindex="120" type="submit">
+                    <a href="#" class="btn-clear discard-question">discard</a>
+                    
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+<div id="sidebar" class="ask-sidebar">
+    <div id="scroller-anchor"></div>
+    <div id="scroller" style="position: fixed; top: 0px; width: 365px;">
+        <div class="module newuser sidebar-help" id="how-to-title" style="display: none;">
+            <h4>How to Ask</h4>
+            <p><b>Is your question about programming?</b></p><p>We prefer questions that can be <i>answered</i>, not just discussed.</p><p>Provide details. Share your research.</p><p>If your question is about this website, <b><a href="http://meta.stackoverflow.com/">ask it on meta</a></b> instead.</p><p class="ar"><a href="http://stackoverflow.com/help">visit the help center »</a><br><a href="http://stackoverflow.com/help/how-to-ask">asking help »</a></p>
+        </div>
+        <div class="module newuser sidebar-help" id="how-to-format" style="display: block;"><h4>Similar Questions</h4><ul><li><a href="http://stackoverflow.com/questions/503093/how-do-i-redirect-to-another-page-in-jquery" title="How can I redirect the user from one page to another using jQuery?">How do I redirect to another page in jQuery?</a></li><li><a href="http://stackoverflow.com/questions/1789945/how-to-check-if-one-string-contains-another-substring-in-javascript" title="Usually, I would expect a String.contains() method, but there doesn't seem to be one. What is the reasonable way to check for this?">How to check if one string contains another substring in JavaScript?</a></li><li><a href="http://stackoverflow.com/questions/90178/make-a-div-fill-the-height-of-the-remaining-screen-space" title="I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an ...">Make a div fill the height of the remaining screen space</a></li><li><a href="http://stackoverflow.com/questions/166221/how-can-i-upload-files-asynchronously" title="I would like to upload a file asynchronously with jQuery. This is my HTML:
+
+&lt;span&gt;File&lt;/span&gt;
+&lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot; size=&quot;10&quot;/&gt;
+&lt;input id=&quot;uploadbutton&quot; type=&quot;...">How can I upload files asynchronously?</a></li><li><a href="http://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link" title="I would like to create an HTML button that acts like a link. So, when you click the button, it redirects to a page. I would like it to be as accessible as possible. 
+
+I would also like it so there ...">How to create an HTML button that acts like a link?</a></li><li><a href="http://stackoverflow.com/questions/31460904/how-to-make-javascript-link-to-another-page" title="I would like to know how to make a JavaScript function link to another site.
+
+Here is my code so far.
+
+var user = &quot;iamauser1&quot;
+var pass = &quot;iamauser2&quot;
+var userfield = document.getElementByName(&quot;...">How to make JavaScript link to another page</a></li><li><a href="http://stackoverflow.com/questions/450903/how-to-make-div-not-larger-than-its-contents" title="I have a layout similar to:
+
+&lt;div&gt;
+    &lt;table&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+I would like for the div to only expand to as wide as my table becomes.">How to make div not larger than its contents?</a></li><li><a href="http://stackoverflow.com/questions/37196592/how-to-get-a-link-to-go-to-a-specific-div-on-another-page" title="Say I have a link that says:
+
+&lt;a href=&quot;services&quot;&gt;Services&lt;/a&gt;
+
+When I click on that link I want to obviously go to the services page, but what I am trying to figure out is how can I get ...">How to get a link to go to a specific div on another page</a></li><li><a href="http://stackoverflow.com/questions/29239803/how-do-i-make-a-javascript-div-open-on-load-but-hide-when-clicking-on-another-di" title="You can see my page sample here: https://dl.dropboxusercontent.com/u/24791073/TheAmericanWorker/index5.html. I am trying to load the MEC div, then close it when clicking on another link such as ...">How do I make a javascript div open on load but hide when clicking on another div link?</a></li><li><a href="http://stackoverflow.com/questions/39630256/how-to-create-a-css-class-that-makes-an-element-link-to-another-page" title="super css noob here.
+
+I'm using a wordpress plugin called visual composer which allows you to name a Row (it's like a block element) with a Row ID or a Class name. I'm trying to have it so when a user ...">how to create a css class that makes an element link to another page</a></li><li><a href="http://stackoverflow.com/questions/30525658/how-to-make-a-class-active-on-another-page-by-click-link-in-another-page-in-html" title="I have one doubt can i have an anchor tag in demo1.html page if i click that link it has to got to demo2.html page. In demo2.html page i am using a data filter and it has to select that filter can we ...">how to make a class active on another page by click link in another page in html</a></li><li><a href="http://stackoverflow.com/questions/16304787/how-to-append-a-div-from-another-page-to-a-div-from-the-current-page" title="How to append a div from another page to a div from the current page?
+I know the .load but is there a way to append?
+
+$.ajax({
+            type: &quot;POST&quot;,
+            url: '/script/validate_email.php',
+ ...">How to append a div from another page to a div from the current page?</a></li><li><a href="http://stackoverflow.com/questions/24968075/javascript-button-link-on-one-page-to-show-hidden-div-on-another-page" title="I have a home.html and faq.html.
+The faq page has many questions and their answers listed consecutively down the page. I want the answers hidden until a question is clicked that opens that answer. ...">JavaScript button link on one page to show hidden div on another page</a></li></ul></div>
+        <div class="module newuser sidebar-help" id="how-to-tag" style="display:none">
+    <h4>How to Tag</h4>
+    <p>A tag is a keyword or label that categorizes your question with other, similar questions.</p>    
+    <p><span class="dingus">►</span> favor existing popular tags; avoid creating new tags</p>
+    <p><span class="dingus">►</span> use common abbreviations</p>
+    <p><span class="dingus">►</span> don't include synonyms</p>
+    <p><span class="dingus">►</span> combine multiple words into single-words with dashes</p>
+    <p><span class="dingus">►</span> maximum of 5 tags, 25 chars per tag</p>
+    <p><span class="dingus">►</span> tag characters: [a-z 0-9 + # - .]</p>
+    <p><span class="dingus">►</span> delimit tags by space, semicolon, or comma</p>
+    <p class="ar"><a href="http://stackoverflow.com/tags">popular tags »</a></p>
+</div>    
+    </div>
+    <script>
+        StackExchange.ready(function () { moveScroller(); });
+        StackExchange.using("editor", function () {
+                        
+            var lengthCheckInterval = setInterval(function () {
+                if ($("#wmd-input").val().length >= 220) {
+                    clearInterval(lengthCheckInterval);
+                    StackExchange.cardiologist.beatASAP();
+                }
+            }, 3000);
+        });
+        
+
+    </script>
+        
+</div>
+
+<br class="cbt">
+<div style="display:none" id="prettify-lang"></div>
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="4">
+                Technology
+            </th>
+            <th colspan="2">
+                Life / Arts
+            </th>
+            <th colspan="2">
+                Culture / Recreation
+            </th>
+            <th colspan="2">
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2016 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2016.12.30.1
+            </div>
+                </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Stack Overflow works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+        <script> setTimeout(function() { $("#adzerk-user-match").remove(); }, 2000);</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            
+                ga('create', 'UA-5620270-1', {'userId': '9073323' });
+                
+        ga('create', 'UA-5620270-60', {'userId': '9073323' }, 'pageData');
+        
+                ga('set', 'dimension1', '9073323');                     ga('pageData.set', 'dimension1', '9073323');             ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

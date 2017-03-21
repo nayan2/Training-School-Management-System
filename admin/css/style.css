@@ -1,0 +1,54 @@
+.float-my-children > * {
+    float:left;
+    margin-right:5px;
+}
+.highlight {
+    background-color: #fff34d;
+    -moz-border-radius: 5px; /* FF1+ */
+    -webkit-border-radius: 5px; /* Saf3-4 */
+    border-radius: 5px; /* Opera 10.5, IE 9, Saf5, Chrome */
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* FF3.5+ */
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Saf3.0+, Chrome */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7); /* Opera 10.5+, IE 9.0 */
+}
+
+.highlight {
+    padding:1px 4px;
+    margin:0 -4px;
+}
+.block label { 
+    display: inline-block; 
+    width: 140px; 
+    text-align: right;
+    margin-left: 365px;
+    color: #000000; 
+}
+.block h6 {
+  margin-top: -24px;
+  margin-left: 520px;
+  color: #000000; 
+}
+.block hr {
+  margin-top: 0px;
+  margin-left: 375px;
+  width: 90%;
+  border: 0.1px solid #434a52;
+  margin-bottom: 5px;
+}
+
+#addCourseFromVendorPage {
+  cursor: pointer;
+  color: red;
+}
+
+#addCourseFromVendorPage:hover {
+  text-decoration: underline;
+}
+
+.cventablehead, .courseFunctionalButton, .batchUnderline {
+  color: red;
+  cursor: pointer;
+}
+.cventablehead:hover , .courseFunctionalButton:hover , .batchUnderline:hover {
+  text-decoration: underline;
+}
